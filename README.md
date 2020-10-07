@@ -322,7 +322,10 @@ ax.plot(x, norm.pdf(x, mu, sqrt(S_2))*scale) # compute theoritical PDF and draw 
 ##### 5. Quelles remarques peut-on faire à l'observation de l'histogramme et de loi théorique?
 
 ```
-
+Nos échantillons ne suivent pas vraiment une loi normale.
+Moyenne < 0 donc protéines moins abondantes dans l'expérience par rapport aux contrôles.
+Médiane > Moyenne donc on a plus de protéines au dessus de la moyenne qu'en dessous.
+Cela s'explique par la présence de la tétracycline qui perturbe l'action du ribosome donc perturbe la traduction = protéines trop petites, mal formées etc.
 
 ```
 
