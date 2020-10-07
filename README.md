@@ -37,13 +37,14 @@ Cette partie du TP est découpée en 4 grandes parties avec pour chacune des par
 ##### En quoi consiste l’approche Shotgun proteomics?
 
 ```
-
+Approche bottom-up (on prend un échantillon et on le digère) qui permet d'identifier des protéines dans un contexte biologique, par spectrométrie de masse.
+Rmq : top-down = prendre l'échantillon et injecter au sein du MS, sans digestion.
 ```
 
 ##### Quel est l’objectif de cette approche ?
 
 ```
-
+Identifier des différences entre des échantillons n'ayant pas la même origine (conditions différentes...) dans le but d'identifier des bio-marqueurs.
 ```
 
 #### Procédure
@@ -59,7 +60,7 @@ Cette partie du TP est découpée en 4 grandes parties avec pour chacune des par
 ##### L’identification des protéines/ peptides se réalise grâce à une base de données de protéines. Quelle comparaison va être effectuée?
 
 ```
-
+On va comparer nos data expérimentales au protéome qu'on a download dans uniprot (données théoriques) grâce à cette base de données
 ```
 
 ##### Existe t’il d’autres types de bases de données pour réaliser l’identification des peptides trypsiques dans un spectre?
