@@ -64,18 +64,17 @@ On va comparer nos data expérimentales au protéome qu'on a download dans unipr
 ```
 
 ##### Existe t’il d’autres types de bases de données pour réaliser l’identification des peptides trypsiques dans un spectre?
-
 ```
-
+Utiliser des bases de données spectrales pour faire des homologies.
 ```
 
 ##### Est-ce qu’il est possible d’identifier des peptides sans base de données?
 ```
-
+Oui 
 ```
 ##### Combien de protéines sont identifiées dans le protéome bactérien?
 ```
-
+4391 protéines
 ```
 ##### Comment la liste des séquences des protéines est-elle établie ? Est-elle complète? 
 ```
@@ -83,15 +82,18 @@ On va comparer nos data expérimentales au protéome qu'on a download dans unipr
 ```
 ##### Quelle est la différence entre des séquences Swiss-prot et TremBL?
 ```
-
+Swiss-prot: Séquences protéiques annotées manuellement
+TremBL: Séquences protéiques annotées par programmes
 ```
 ##### A quoi correspond la protéine P00761 et quelle est sa fonction ? 
 ```
-
+Correspond à la trypsine, qui clive spécifiquement après le groupement carboxyl des:
+•	Lysine 
+•	Arginine 
 ```
 ##### Pourquoi doit-on rajouter cette protéine dans le fichier FASTA final du protéome bactérien?
 ```
-
+Pour ne pas fausser les résultats - la trypsine est encore présente dans l'échantillon et donc elle doit être reconnu.
 ```
 
 ### Création de la « peak list »
@@ -138,6 +140,7 @@ NB : si vous avez des messages d’erreur qui s’affichent (missing precursor c
 #### Questions 
 ##### Pourquoi est-il important de bien choisir sa base de données?
 ```
+Différences entre les bases de données : pas le le même nombre d'entrée, annotation mannuelle ou par programmes, etc...)
 ```
 ##### Est-ce que l’on retrouvera toujours les mêmes protéines au cours du temps ?
 ```
@@ -157,9 +160,12 @@ NB : si vous avez des messages d’erreur qui s’affichent (missing precursor c
 
 ##### Qu’est-ce qu’un missed cleavage ? pourquoi 2 et pas 0 ?
 ```
+Correspond à un site qui aurait du être clivé mais qui ne l'a pas été.  Fixer le nombre de missed cleavage autorisé à 0 serait risqué car cela voudrait dire qu'on attend une digestion parfaite , hors il y a souvent certans sites qui ne sont pas clivés
 ```
 ##### Qu’est-ce que la tolérance en masse, comment la calcule-t-on ?
 ```
+Correspond à l’écart de masse maximum toléré entre la masse du peptide expérimental et la masse du peptide qui « matche » dans la banque
+La tolérance de masse dépend de la résolution et de la qualité de la calibration de l'appareil
 ```
 
 ### Visualisation des PSM, peptides - protéines
@@ -302,8 +308,8 @@ Representer graphiquement les données d'abondance et construire la pvalue des f
 
 ##### 3. A partir de cette échantillon de ratio d'abondance,  estimez la moyenne <img src="https://render.githubusercontent.com/render/math?math=\mu"> et l'ecart-type <img src="https://render.githubusercontent.com/render/math?math=\sigma"> d'une loi normale.
 ```
-
-
+moyenne estimée : -0.639
+ecart type estimé : 0.471
 ```
 
 ##### 4. Superposez la densité de probabilité de cette loi sur l'histogramme. Attention, la densité de probabilité devra être mis à l'echelle de l'histogramme (cf ci-dessous)
@@ -322,8 +328,10 @@ ax.plot(x, norm.pdf(x, mu, sqrt(S_2))*scale) # compute theoritical PDF and draw 
 ##### 5. Quelles remarques peut-on faire à l'observation de l'histogramme et de loi théorique?
 
 ```
-
-
+On remarque que les échantillons ne suivent pas vraiment une loi normale : 
+Moyenne < 0 donc protéines moins abondantes dans l'expérience par rapport aux contrôles.
+Médiane > Moyenne donc on a plus de protéines au dessus de la moyenne qu'en dessous.
+Cela s'explique par la présence de la tétracycline qui perturbe l'action du ribosome donc perturbe la traduction = protéines trop petites ou mal formées, etc.
 ```
 
 #### Construction d'un volcano plot
@@ -336,7 +344,7 @@ Sont condidérées comme surabondantes les proteines remplissant ces deux critè
 * <img src="https://render.githubusercontent.com/render/math?math=\text{Log}_2(\text{abundance ratio})\gt\mu%2B\sigma">  
 * <img src="https://render.githubusercontent.com/render/math?math=\text{p-value}>0.001">
 
-![Volcano plot + quadrant à inserez ici](histogram_log2FC.png "Title")
+![](assets/volcano_plot.png "Volcano plot")
 
 ### Analyse Fonctionelle de pathway
 
