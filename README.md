@@ -344,8 +344,6 @@ Sont condidérées comme surabondantes les proteines remplissant ces deux critè
 * <img src="https://render.githubusercontent.com/render/math?math=\text{Log}_2(\text{abundance ratio})\gt\mu%2B\sigma">  
 * <img src="https://render.githubusercontent.com/render/math?math=\text{p-value}>0.001">
 
-![](assets/MSConvert_screen.png "MS convert screencast")
-
 ![](assets/volcano_plot.png "Volcano plot")
 
 ### Analyse Fonctionelle de pathway
