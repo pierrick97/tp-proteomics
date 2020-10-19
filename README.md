@@ -82,7 +82,7 @@ Oui
 ```
 ##### Quelle est la différence entre des séquences Swiss-prot et TremBL?
 ```
-Swiss-prot: Séquences protéiques annotées manuellement
+Swiss-prot: Séquences protéiques annotées manuellement, contient que des vraies séquences protéiques qui ont été séquencées
 TremBL: Séquences protéiques annotées par programmes
 ```
 ##### A quoi correspond la protéine P00761 et quelle est sa fonction ? 
