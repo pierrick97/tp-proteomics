@@ -144,14 +144,17 @@ Différences entre les bases de données : pas le le même nombre d'entrée, ann
 ```
 ##### Est-ce que l’on retrouvera toujours les mêmes protéines au cours du temps ?
 ```
+Non, d'une part la base de données est suceptible d'être modifiée / d'évoluer.
 ```
 
 ##### Comment la taille de la base de données peut affecter le score de la protéine recherchée?
 ```
+Plus la base de données est importante, plus le score de la protéine recherchée est suceptible d'être élévé. On aura plus de fragments théoriques sur lesquels on peut comparer nos fragments expérimentaux.
 ```
 
 ##### Est-ce que les modifications ajoutées sont les seules modifications que l’on peut attendre dans une expérience de shotgun proteomics?
 ```
+Non, on pourrait ajouter d'autres modifications
 ```
 
 ##### Vous avez choisi la trypsine comme enzyme et choisi « specific », qu’est-ce que cela signifie, et comment cela peut affecter le processing ? 
