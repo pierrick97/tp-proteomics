@@ -60,7 +60,7 @@ Identifier des différences entre des échantillons n'ayant pas la même origine
 ##### L’identification des protéines/ peptides se réalise grâce à une base de données de protéines. Quelle comparaison va être effectuée?
 
 ```
-On va comparer nos data expérimentales au protéome qu'on a download dans uniprot (données théoriques) grâce à cette base de données
+On va comparer nos données expérimentales au protéome qu'on a download dans uniprot (données théoriques) grâce à cette base de données
 ```
 
 ##### Existe t’il d’autres types de bases de données pour réaliser l’identification des peptides trypsiques dans un spectre?
