@@ -311,6 +311,7 @@ Representer graphiquement les données d'abondance et construire la pvalue des f
 
 ##### 3. A partir de cette échantillon de ratio d'abondance,  estimez la moyenne <img src="https://render.githubusercontent.com/render/math?math=\mu"> et l'ecart-type <img src="https://render.githubusercontent.com/render/math?math=\sigma"> d'une loi normale.
 ```
+La moyenne estimée de la loi normale correspond à la moyenne de l'échantillon, la variance estimée est égale à : (n/n-1) * var_exp
 moyenne estimée : -0.639
 ecart type estimé : 0.471
 ```
